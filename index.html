@@ -1,0 +1,331 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hajib app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12 menu">
+                    <div class="flex-shrink-0 bg-white menu-items" style="width: 280px;">
+                        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none line-bottom">
+                            <svg class="bi me-3" width="30" height="24">
+                                <use xlink:href="#"></use>
+                            </svg>
+                            <span><img src="./img/logo.png" alt=""></span>
+                        </a>
+                        <div class="container">
+                            <div class="row">
+                                <ul class="list-unstyled ps-0">
+                                    <li class="mb-1">
+                                        <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                            Home
+                                        </button>
+
+                                    </li>
+                                    <li class="mb-1">
+                                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                            Sign Up
+                                        </button>
+                                        <div class="collapse" id="dashboard-collapse">
+
+                                            <div class="form signupForm btn-toggle-nav">
+
+                                                <form action="">
+                                                    <p> Don't Have an Account ?</p>
+                                                    <input type="text" name="" id="username_reg" placeholder="Username" class="form-control mb-2" style="width:70%">
+                                                    <input type="email" name="" id="email_reg" placeholder="Email Address" class="form-control mb-2" style="width:70%">
+                                                    <input type="password" name="" id="password_reg" placeholder="password" class="form-control mb-2" style="width:70%">
+                                                    <input type="password" name="" id="re_password_reg" placeholder="confirm password" class="form-control mb-2" style="width:70%">
+                                                    <input type="submit" value="Register" id="regBtn" class="form-control mb-2" style="width:70%;">
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-1">
+                                        <button class="btn btn-toggle align-items-center rounded collapsed" id="signinbtn" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                            Sign In
+                                        </button>
+                                        <div class="collapse" id="orders-collapse">
+
+                                            <div class="form signinForm btn-toggle-nav">
+                                                <form action="" method="get">
+                                                    <p> Already Have an Account ?</p>
+                                                    <input type="text" name="" id="username_log" placeholder="Username">
+                                                    <input type="password" name="" id="password_log" placeholder="password">
+                                                    <input type="submit" value="Login" id="logBtn">
+                                                    <a href="#" class="forgot">Forgot Password</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="border-top my-3 line-top"></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 products">
+
+                    <div class="sayhello" id="sayhello">
+
+                        <h3 class="h5">Hello visitors <span>please sign in/sign up</span></h3>
+                        <p>to interest by our offers</p>
+                    </div>
+                    <h2 class="product-head">PRODUCTS</h2>
+                    <div class="list">
+                      
+                   
+                 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="showcase item" data-key="1">
+
+                                    <div class="showcase-banner">
+                                        <div class="showcase-banner-img">
+                                            <img src="./img/products/dress1a.png" alt="Mens Winter Leathers Jackets" class="product-img default">
+                                            <img src="./img/products/dress1B.png" alt="Mens Winter Leathers Jackets" class="product-img hover">
+                                        </div>
+                                        <p class="showcase-badge">15%</p>
+
+                                        <div class="showcase-actions">
+                                            <button class="btn-action">
+                                                <i class="bx bx-shopping-bag ion-icon add" name="bag-add-outline"></i>
+
+                                            </button>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <a href="#" class="showcase-category title">dress</a>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title desc">Accordion Dress-Maroon</h3>
+                                        </a>
+                                        <div class="container1">
+                                            <div class="row">
+                                                <input type="number" class="count col-4" min="1" value="1">
+
+
+                                                <div class="price-box col-6">
+
+                                                    $ <p class="price">48.00</p>
+                                                    <del>$75.00</del>
+                                                </div>
+                                                <button class="remove col-2" onclick="Remove(1)"><i class="bx bxs-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="showcase-rating">
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="showcase item" data-key="2">
+
+                                    <div class="showcase-banner">
+                                        <div class="showcase-banner-img">
+                                            <img src="./img/products/dress2a.png" alt="Mens Winter Leathers Jackets" class="product-img default">
+                                            <img src="./img/products/dress2b.png" alt="Mens Winter Leathers Jackets" class="product-img hover">
+                                        </div>
+                                       
+
+                                        <div class="showcase-actions">
+                                            <button class="btn-action">
+                                                <i class="bx bx-shopping-bag ion-icon add" name="bag-add-outline"></i>
+
+                                            </button>
+
+
+                                        </div>
+                                        <p class="showcase-badge angle black">sale</p>
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <a href="#" class="showcase-category title">dress</a>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title desc">Accordion Dress-Maroon</h3>
+                                        </a>
+                                        <div class="container1">
+                                            <div class="row">
+                                                <input type="number"  class="count col-4" min="1" value="1">
+
+
+                                                <div class="price-box col-6">
+
+                                                    $<p class="price">48.00</p>
+                                                    <del>$75.00</del>
+                                                </div>
+                                                <button class="remove col-2" onclick="Remove(2)"><i class="bx bxs-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="showcase-rating">
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="showcase item" data-key="3">
+
+                                    <div class="showcase-banner">
+                                        <div class="showcase-banner-img">
+                                            <img src="./img/products/dress3a.png" alt="Mens Winter Leathers Jackets" class="product-img default">
+                                            <img src="./img/products/dress3b.png" alt="Mens Winter Leathers Jackets" class="product-img hover">
+                                        </div>
+                                        
+
+                                        <div class="showcase-actions">
+                                            <button class="btn-action">
+                                                <i class="bx bx-shopping-bag ion-icon add" name="bag-add-outline"></i>
+                                               
+                                            </button>
+
+
+                                        </div>
+                                        <p class="showcase-badge angle pink">new</p>
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <a href="#" class="showcase-category title">dress</a>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title desc">Accordion Dress-Maroon</h3>
+                                        </a>
+                                        <div class="container1">
+                                            <div class="row">
+                                                <input type="number" class="count col-4" min="1" value="1">
+
+
+                                                <div class="price-box col-6">
+
+                                                    $<p class="price">48.00</p>
+                                                    <del>$75.00</del>
+                                                </div>
+                                                <button class="remove col-2" onclick="Remove(3)"><i class="bx bxs-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="showcase-rating">
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="showcase item" data-key="4">
+
+                                    <div class="showcase-banner">
+                                        <div class="showcase-banner-img">
+                                            <img src="./img/products/dress4a.png" alt="Mens Winter Leathers Jackets" class="product-img default">
+                                            <img src="./img/products/dress4b.png" alt="Mens Winter Leathers Jackets" class="product-img hover">
+                                        </div>
+                                       
+
+                                        <div class="showcase-actions">
+                                            <button class="btn-action">
+                                                <i class="bx bx-shopping-bag ion-icon add" name="bag-add-outline"></i>
+
+                                            </button>
+
+
+                                        </div>
+                                        <p class="showcase-badge angle black">sale</p>
+                                    </div>
+
+                                    <div class="showcase-content">
+
+                                        <a href="#" class="showcase-category title">dress</a>
+
+                                        <a href="#">
+                                            <h3 class="showcase-title desc">Accordion Dress-Maroon</h3>
+                                        </a>
+                                        <div class="container1">
+                                            <div class="row">
+                                                <input type="number" class="count col-4" min="1" value="1">
+
+
+                                                <div class="price-box col-6">
+
+                                                    $<p class="price">48.00</p>
+                                                    <del>$75.00</del>
+                                                </div>
+                                                <button class="remove col-2" onclick="Remove(4)"><i class="bx bxs-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="showcase-rating">
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bxs-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                            <i class="bx bx-star ion-icon" name="star"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                </div>
+                <div class="col-md-3 col-sm-12 cart">
+
+                    <div class="name">CART</div>
+                    <div class="listCart">
+                      <button id="result" class="btn btn-primary">total </button>
+                      <span id="res"></span>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
+</body></html>
